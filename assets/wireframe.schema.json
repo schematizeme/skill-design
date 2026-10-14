@@ -1,0 +1,332 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/schematizeme/skill-design/blob/main/assets/wireframe.schema.json",
+  "title": "wireframe.json",
+  "description": "Spec estrutural de uma pagina, destilado de uma referencia visual. Fonte da verdade do pipeline schematize-design: renderiza para SVG e alimenta o builder.",
+  "type": "object",
+  "required": [
+    "meta",
+    "secoes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "projeto"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "projeto": {
+          "type": "string",
+          "description": "Nome do cliente ou produto."
+        },
+        "origem": {
+          "type": "string",
+          "description": "De onde veio a referencia: caminho da imagem, URL, ou 'sem referencia'."
+        },
+        "direcao": {
+          "type": "object",
+          "description": "So quando NAO ha referencia. Escrever a direcao antes de desenhar e o que impede o modelo de cair no mediano do treino. Ver references/do-zero.md.",
+          "additionalProperties": false,
+          "properties": {
+            "sensacao": {
+              "type": "string",
+              "description": "Por contraste, nao por adjetivo. \"oficina de precisao, nao startup\"."
+            },
+            "referencia": {
+              "type": "string",
+              "description": "URL do que foi olhado de verdade, via buscar-referencias.mjs."
+            },
+            "aposta": {
+              "type": "string",
+              "description": "A UMA decisao forte da pagina."
+            },
+            "proibido": {
+              "type": "string",
+              "description": "O que nao entra. E o campo que mais trabalha."
+            }
+          }
+        },
+        "stack": {
+          "enum": [
+            "html",
+            "nextjs",
+            "liquid",
+            "a-definir"
+          ],
+          "default": "a-definir",
+          "description": "Decide o builder. Fica \"a-definir\" ate a pessoa responder no fim do /design-wire: a stack nao muda nada no wireframe, so no build."
+        },
+        "pagina": {
+          "enum": [
+            "landing",
+            "institucional",
+            "pdp",
+            "hero",
+            "secao"
+          ]
+        },
+        "acao": {
+          "type": "string",
+          "description": "A UNICA acao que a pessoa deve tomar. Se houver duas, escolha a principal."
+        },
+        "tema": {
+          "enum": [
+            "claro",
+            "escuro",
+            "ambos"
+          ],
+          "default": "claro"
+        },
+        "viewport": {
+          "type": "integer",
+          "default": 1440,
+          "description": "Largura de referencia em px."
+        },
+        "suposicoes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "O que foi inferido da imagem e NAO foi confirmado. Declare sempre."
+        },
+        "movimento": {
+          "enum": [
+            "sobrio",
+            "narrativo"
+          ],
+          "default": "sobrio",
+          "description": "sobrio = so reveal no scroll, IntersectionObserver e CSS, 0 KB. narrativo = pin e scrub, ai entra GSAP (~45 KB gzip). Ver references/gsap.md."
+        }
+      }
+    },
+    "tokens": {
+      "type": "object",
+      "description": "Cores em hex. Todas passam pelo checar-contraste.mjs antes do build.",
+      "additionalProperties": false,
+      "properties": {
+        "acento": {
+          "type": "string",
+          "default": "#0071e3",
+          "description": "Cor de PREENCHIMENTO do botao. Nao use como texto: veja acentoTexto."
+        },
+        "acentoTexto": {
+          "type": "string",
+          "default": "#0066cc",
+          "description": "Cor do LINK em texto. O acento de preenchimento costuma reprovar como texto sobre faixa cinza."
+        },
+        "acentoRotulo": {
+          "type": "string",
+          "default": "#ffffff",
+          "description": "Cor que vai EM CIMA do acento. Em tema escuro o acento e claro e o rotulo precisa ser escuro."
+        },
+        "acentoBorda": {
+          "type": "string",
+          "description": "Filete em volta do preenchimento, para quando o acento e claro demais para se separar do fundo. WCAG 1.4.11 pede 3:1 para componente, e verde limao sobre branco da 1.5:1. Precisa passar 3:1 contra o fundo E aparecer sobre o proprio acento."
+        },
+        "fundo": {
+          "type": "string",
+          "default": "#ffffff"
+        },
+        "superficie": {
+          "type": "string",
+          "default": "#f5f5f7"
+        },
+        "escuro": {
+          "type": "string",
+          "default": "#1d1d1f"
+        },
+        "texto": {
+          "type": "string",
+          "default": "#1d1d1f"
+        },
+        "textoSec": {
+          "type": "string",
+          "default": "#6e6e73"
+        },
+        "borda": {
+          "type": "string",
+          "default": "#d2d2d7"
+        },
+        "raio": {
+          "type": "integer",
+          "default": 18
+        },
+        "container": {
+          "type": "integer",
+          "default": 980,
+          "description": "Largura util do conteudo. 688 para texto corrido, 980 padrao, 1440 full."
+        },
+        "fonte": {
+          "type": "string",
+          "default": "system"
+        }
+      }
+    },
+    "secoes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/secao"
+      }
+    }
+  },
+  "$defs": {
+    "secao": {
+      "type": "object",
+      "required": [
+        "id",
+        "layout",
+        "blocos"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "kebab-case. Vira id do <section> e nome do componente."
+        },
+        "rotulo": {
+          "type": "string",
+          "description": "Nome legivel no wireframe. Default: o id."
+        },
+        "layout": {
+          "enum": [
+            "centro",
+            "split",
+            "split-invertido",
+            "media-full",
+            "grid",
+            "bento",
+            "faixa",
+            "empilhado"
+          ],
+          "description": "centro=coluna centralizada; split=texto+media lado a lado; media-full=media de fundo com texto por cima; grid=cards iguais; bento=cards de tamanhos diferentes; faixa=linha horizontal (logos, stats); empilhado=coluna alinhada a esquerda."
+        },
+        "colunas": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6,
+          "default": 3
+        },
+        "altura": {
+          "description": "px (number) ou 'NNvh' (string). Omitido = altura do conteudo.",
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "densidade": {
+          "enum": [
+            "airy",
+            "normal",
+            "densa"
+          ],
+          "default": "normal"
+        },
+        "fundo": {
+          "enum": [
+            "fundo",
+            "superficie",
+            "escuro",
+            "acento"
+          ],
+          "default": "fundo"
+        },
+        "largura": {
+          "enum": [
+            "texto",
+            "conteudo",
+            "full"
+          ],
+          "default": "conteudo",
+          "description": "texto=688px, conteudo=container, full=viewport inteiro."
+        },
+        "nota": {
+          "type": "string",
+          "description": "Observacao para o builder. Aparece no SVG."
+        },
+        "blocos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/bloco"
+          }
+        }
+      }
+    },
+    "bloco": {
+      "type": "object",
+      "required": [
+        "tipo"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "tipo": {
+          "enum": [
+            "nav",
+            "eyebrow",
+            "h1",
+            "h2",
+            "h3",
+            "sub",
+            "corpo",
+            "lista",
+            "cta",
+            "cta-sec",
+            "media",
+            "icone",
+            "chip",
+            "logo",
+            "stat",
+            "form",
+            "divisor",
+            "card",
+            "espaco"
+          ],
+          "description": "cta=botao primario (acento). cta-sec=secundario/link. media=imagem ou video. card=container com blocos dentro."
+        },
+        "texto": {
+          "type": "string",
+          "description": "Copy real ou intencao dela. NUNCA use travessao."
+        },
+        "linhas": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 1,
+          "description": "Quantas linhas o texto ocupa. Dimensiona o bloco."
+        },
+        "itens": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Para lista, faixa, form: quantos itens/campos."
+        },
+        "formato": {
+          "type": "string",
+          "description": "Para media: '16:9', '4:3', '1:1', '3:4', 'preencher'."
+        },
+        "busca": {
+          "type": "string",
+          "description": "Assunto da foto EM INGLES, para o buscar-imagens.mjs consultar banco livre. Ex: \"modern modular house forest\". So em bloco media. Sem isto o termo sai do id da secao e o resultado piora muito."
+        },
+        "peso": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4,
+          "default": 1,
+          "description": "Para bento: quantas colunas o card ocupa."
+        },
+        "nota": {
+          "type": "string",
+          "description": "Instrucao ao builder. Ex: 'foto real da obra, nunca stock'."
+        },
+        "blocos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/bloco"
+          },
+          "description": "Só para tipo=card."
+        }
+      }
+    }
+  }
+}
