@@ -3,6 +3,13 @@
 Todas as mudanças relevantes deste pacote, no formato [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/),
 com versionamento [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.1.1] — 2026-10-14
+Integração ao catálogo (grafo, skills.json, herdados) e correção do texto de precedência herdado.
+
+### Alterado
+- Blocos herdados ressincronizados com a `schematize-engineering` v0.27.0 (`tools/sync-herdados.mjs`): orquestração com a regra de imagem (nunca pelo Claude; detecta Codex/Gemini e pergunta ao usuário qual usar, Codex como sugestão) e `schematize overdev delegar` (comando do app) no lugar do falso nome de skill `schematize-overdev`.
+- Bloco "Precedência e herança" passa à variante `dominio`: o texto antigo dizia que os comandos `/design-*` "cobrem só o piso da linguagem", o que é falso para skill de domínio/ferramenta.
+
 ## [0.1.0] — 2026-10-14
 Primeira versão: a superskill de design. Havia três fontes boas e incompatíveis entre si, usadas à mão e uma de cada vez: o pipeline de wireframe da casa (a skill de design anterior da casa, v1.3.1, com scripts e números medidos), a filosofia de polimento e o framework de animação de Emil Kowalski (MIT) e o método de direção de arte do Impeccable v4.4 de Paul Bakaus (Apache 2.0). Três skills coladas dariam três respostas diferentes para a mesma pergunta (easing, kicker, travessão, fonte de sistema); esta funde as três e **resolve os conflitos por escrito**. A fronteira com a `schematize-web` fica explícita: design é direção visual, a web é engenharia de front.
 

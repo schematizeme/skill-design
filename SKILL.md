@@ -20,11 +20,12 @@ fontes"): não reabra caso a caso.
 
 ## Precedência e herança (leia antes de divergir)
 
-<!-- herdado:engineering/precedencia:foraRol intro="Esta skill é a **direção visual** da casa: decide como a interface parece e se comporta (gosto, wireframe, polimento, animação, auditoria visual). A **engenharia de front** (RSC, segurança, a11y como piso técnico, Core Web Vitals, SEO técnico, testes) é da `schematize-web`; a fronteira está abaixo." cmd="design" -->Esta skill é a **direção visual** da casa: decide como a interface parece e se comporta (gosto, wireframe, polimento, animação, auditoria visual). A **engenharia de front** (RSC, segurança, a11y como piso técnico, Core Web Vitals, SEO técnico, testes) é da `schematize-web`; a fronteira está abaixo.
+<!-- herdado:engineering/precedencia:dominio intro="Esta skill é a **direção visual** da casa: decide como a interface parece e se comporta (gosto, wireframe, polimento, animação, auditoria visual). A **engenharia de front** (RSC, segurança, a11y como piso técnico, Core Web Vitals, SEO técnico, testes) é da `schematize-web`; a fronteira está abaixo." cmd="design" -->Esta skill é a **direção visual** da casa: decide como a interface parece e se comporta (gosto, wireframe, polimento, animação, auditoria visual). A **engenharia de front** (RSC, segurança, a11y como piso técnico, Core Web Vitals, SEO técnico, testes) é da `schematize-web`; a fronteira está abaixo.
 
-1. **Onde esta skill divergir da base, a BASE MANDA.** Aqui mora a especialização — a lib, o gate, a
-   sintaxe da linguagem. Divergência de *piso* é defeito desta skill, não variante local.
-2. **O que não está repetido aqui é HERDADO, não dispensado.** Valem integralmente, sem cópia local:
+1. **Onde esta skill divergir da base, a BASE MANDA.** Aqui mora a especialização do domínio ou da
+   ferramenta — o como, o padrão, o gate. Divergência de *piso* é defeito desta skill, não variante local.
+2. **O que não está repetido aqui é HERDADO, não dispensado.** Esta skill herda os pisos da base e
+   os comandos dela cobrem o **domínio**, não o piso geral. Valem integralmente, sem cópia local:
    - **§28 Archive** — `<projeto>/<projeto>_archive/` é **repositório git próprio, PRIVADO e
      obrigatório**, criticidade 0 (`schematize-archive`).
    - **§35 Definition of Done** e a lista de anti-padrões (citada por **título**, nunca por número).
@@ -35,11 +36,11 @@ fontes"): não reabra caso a caso.
    - **Efeito externo** nunca sai de não-produção (`schematize-engineering` →
      `references/efeitos-externos.md`).
    - **Orquestração** (`schematize-engineering` → `references/orquestracao.md` §9): o principal não
-     desenvolve (é Claude Opus); executor mais barato que resolve — `haiku`/`sonnet` → Codex Terra → Cursor → `opus` só após falha; visual direto ao Codex; imagem via Codex Terra, nunca API paga.
+     desenvolve (é Claude Opus); executor mais barato que resolve — `haiku`/`sonnet` → Codex Terra → Cursor → `opus` só após falha; visual direto ao Codex; imagem nunca pelo Claude: detecta Codex/Gemini e pergunta ao usuário qual usar (Codex é a sugestão, não automática), nunca API paga.
 3. **QA, ops, IAM e índice não têm comando próprio aqui:** vêm da base `/eng-*`. Para trabalho
    contínuo use `/eng-overdev`; para planejar `/eng-plan`; para varrer a base `/eng-scan`; para
    revisão geral `/eng-review` (e `/eng-ops`, `/eng-iam`, `/eng-index`). Os comandos
-   `/design-*` cobrem só o piso da linguagem.<!-- /herdado -->
+   `/design-*` cobrem o domínio desta skill; o piso geral é o da base.<!-- /herdado -->
 
 ## Fronteiras (o que é de quem)
 
@@ -162,7 +163,7 @@ valem como "é só SVG": são visual gerado. Detalhe em `references/imagens.md`.
 12. **Comando sem alvo ou sem argumento pergunta; nunca roda sozinho.**
 13. **Verificação em rodadas limitadas:** uma inspeção, um lote de correção, no máximo uma confirmação. Achado `[grave]`
     continua bloqueando.
-14. <!-- herdado:engineering/orquestracao:curto -->**Orquestrador não desenvolve; subagent barato executa.** O agent principal só planeja, despacha e revisa; ação onerosa vira micro-tasks para o executor mais barato que resolve: `haiku` (mecânico) / `sonnet` (código; falhou → mesmo subagent corrige, até 2 rodadas) → Codex `gpt-5.6-terra` → Cursor → subagent `opus` (motivo) → `park`; **visual vai direto ao Codex**; **imagem: pedir ao Codex Terra, nunca API de imagem paga**; papéis em `agentes.toml`. No overdev, cada item do checklist vai a um subagent e o principal revisa antes do `- [x]`. **Sem frota ociosa:** idle com pendência volta ao trabalho; dependente de outro agent → mata e enfileira com gatilho; terminou → mata (§9.6). Detalhe: `schematize-engineering` → `references/orquestracao.md` §9.<!-- /herdado -->
+14. <!-- herdado:engineering/orquestracao:curto -->**Orquestrador não desenvolve; subagent barato executa.** O agent principal só planeja, despacha e revisa; ação onerosa vira micro-tasks para o executor mais barato que resolve: `haiku` (mecânico) / `sonnet` (código; falhou → mesmo subagent corrige, até 2 rodadas) → Codex `gpt-5.6-terra` → Cursor → subagent `opus` (motivo) → `park`; **visual vai direto ao Codex**; **imagem nunca pelo Claude: detectar Codex/Gemini e perguntar ao usuário qual usar (Codex é a sugestão), nunca API de imagem paga**; papéis em `agentes.toml`. No overdev, cada item do checklist vai a um subagent e o principal revisa antes do `- [x]`. **Sem frota ociosa:** idle com pendência volta ao trabalho; dependente de outro agent → mata e enfileira com gatilho; terminou → mata (§9.6). Detalhe: `schematize-engineering` → `references/orquestracao.md` §9.<!-- /herdado -->
 
 ## Créditos e licenças
 
