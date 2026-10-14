@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="4192" viewBox="0 0 1440 4192" role="img" aria-label="Exemplo Franquia · landing · nextjs">
+<rect width="1440" height="4192" fill="#ffffff"/>
+<text x="40" y="40" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="600" fill="#333333">Exemplo Franquia · landing · nextjs</text>
+<text x="40" y="62" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a">origem: sem referencia, direcao escrita a partir do briefing  ·  acao: preencher o formulario de interesse na franquia  ·  8 secoes  ·  viewport 1440px</text>
+<text x="40" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#b06a00">suposicoes nao confirmadas: a foto do hero e da unidade real, nao stock  ·  o numero da prova precisa de confirmacao junto ao cliente</text>
+<line x1="0" y1="95" x2="1440" y2="95" stroke="#c0c0c0"/>
+<rect x="0" y="96" width="1440" height="72" fill="#ffffff"/>
+<line x1="0" y1="96" x2="1440" y2="96" stroke="#c0c0c0" stroke-dasharray="4 4"/>
+<text x="12" y="114" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a">nav  ·  faixa  ·  densa</text>
+<text x="1428" y="114" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a" text-anchor="end">72px</text>
+<text x="12" y="158" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#b06a00">nota: nav de vidro, backdrop-filter, fixa no topo</text>
+<rect x="24" y="64" width="443" height="40" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="36" y="88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">LOGO · marca</text>
+<rect x="499" y="64" width="443" height="136" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="511" y="136" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">LISTA · links</text>
+<rect x="973" y="64" width="443" height="52" rx="26" fill="#dfe8f5" stroke="#9fbde4"/>
+<text x="985" y="94" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">CTA · Quero a franquia</text>
+<rect x="0" y="168" width="1440" height="792" fill="#ffffff"/>
+<line x1="0" y1="168" x2="1440" y2="168" stroke="#c0c0c0" stroke-dasharray="4 4"/>
+<text x="12" y="186" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a">hero  ·  split  ·  airy</text>
+<text x="1428" y="186" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a" text-anchor="end">792px</text>
+<rect x="230" y="372" width="476" height="128" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="242" y="440" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">H1 · Headline de beneficio, nao de categoria</text>
+<rect x="230" y="532" width="476" height="56" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="242" y="564" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">SUB · Sublinha com o numero que prova</text>
+<rect x="230" y="620" width="220" height="52" rx="26" fill="#dfe8f5" stroke="#9fbde4"/>
+<text x="242" y="650" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">CTA · Quero a franquia</text>
+<rect x="230" y="704" width="220" height="52" rx="26" fill="#ececec" stroke="#d4d4d4"/>
+<text x="242" y="734" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">CTA-SEC · Ver como funciona</text>
+<rect x="770" y="372" width="440" height="330" rx="10" fill="#e4e4e4" stroke="#c8c8c8"/>
+<path d="M770 372 L1210 702 M1210 372 L770 702" stroke="#c8c8c8" fill="none"/>
+<rect x="881" y="524" width="218" height="26" rx="4" fill="#ffffff" opacity="0.93"/>
+<text x="990" y="542" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a" text-anchor="middle">MEDIA · foto da unidade real</text>
+<rect x="0" y="960" width="1440" height="426" fill="#fafafa"/>
+<line x1="0" y1="960" x2="1440" y2="960" stroke="#c0c0c0" stroke-dasharray="4 4"/>
+<text x="12" y="978" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a">prova  ·  empilhado  ·  normal</text>
+<text x="1428" y="978" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a" text-anchor="end">426px</text>
+<text x="12" y="1376" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#b06a00">nota: sem faixa de metricas-heroi: o numero e o argumento, nao o enfeite</text>
+<rect x="376" y="1048" width="688" height="88" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="388" y="1096" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">H2 · Uma frase que carrega o numero que prova, em contexto</text>
+<rect x="376" y="1160" width="688" height="74" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="388" y="1201" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">CORPO · Depoimento ou fato verificavel. Numero entra dentro da frase, nao em faixa de estatisticas</text>
+<rect x="376" y="1258" width="150" height="40" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="388" y="1282" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">LOGO · selo ou pa…</text>
+<rect x="0" y="1386" width="1440" height="866" fill="#ffffff"/>
+<line x1="0" y1="1386" x2="1440" y2="1386" stroke="#c0c0c0" stroke-dasharray="4 4"/>
+<text x="12" y="1404" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a">bento-vantagens  ·  bento  ·  normal</text>
+<text x="1428" y="1404" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a" text-anchor="end">866px</text>
+<text x="12" y="2242" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#b06a00">nota: hierarquia real de tamanho: o card de 2 colunas e o argumento forte</text>
+<rect x="230" y="1474" width="645" height="492" rx="14" fill="#ffffff" stroke="#d4d4d4"/>
+<rect x="254" y="1498" width="597" height="28" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="266" y="1516" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">H3 · Vantagem principal</text>
+<rect x="254" y="1542" width="597" height="48" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="266" y="1570" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">CORPO · Duas linhas de apoio</text>
+<rect x="254" y="1606" width="597" height="336" rx="10" fill="#e4e4e4" stroke="#c8c8c8"/>
+<path d="M254 1606 L851 1942 M851 1606 L254 1942" stroke="#c8c8c8" fill="none"/>
+<rect x="509" y="1761" width="88" height="26" rx="4" fill="#ffffff" opacity="0.93"/>
+<text x="553" y="1779" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a" text-anchor="middle">MEDIA 16:9</text>
+<rect x="899" y="1474" width="311" height="174" rx="14" fill="#ffffff" stroke="#d4d4d4"/>
+<rect x="923" y="1498" width="44" height="44" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="935" y="1524" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">ICO…</text>
+<rect x="923" y="1558" width="263" height="28" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="935" y="1576" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">H3 · Suporte</text>
+<rect x="923" y="1602" width="263" height="22" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="935" y="1617" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">CORPO · Uma linha</text>
+<rect x="230" y="1990" width="311" height="174" rx="14" fill="#ffffff" stroke="#d4d4d4"/>
+<rect x="254" y="2014" width="44" height="44" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="266" y="2040" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">ICO…</text>
+<rect x="254" y="2074" width="263" height="28" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="266" y="2092" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">H3 · Implantacao</text>
+<rect x="254" y="2118" width="263" height="22" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="266" y="2133" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">CORPO · Uma linha</text>
+<rect x="565" y="1990" width="645" height="140" rx="14" fill="#ffffff" stroke="#d4d4d4"/>
+<rect x="589" y="2014" width="597" height="28" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="601" y="2032" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">H3 · Retorno</text>
+<rect x="589" y="2058" width="597" height="48" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="601" y="2086" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">CORPO · Duas linhas</text>
+<rect x="0" y="2252" width="1440" height="560" fill="#ffffff"/>
+<line x1="0" y1="2252" x2="1440" y2="2252" stroke="#c0c0c0" stroke-dasharray="4 4"/>
+<text x="12" y="2270" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a">recurso-estrela  ·  media-full  ·  airy</text>
+<text x="1428" y="2270" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a" text-anchor="end">560px</text>
+<rect x="0" y="2252" width="1440" height="560" rx="10" fill="#e4e4e4" stroke="#c8c8c8"/>
+<path d="M0 2252 L1440 2812 M1440 2252 L0 2812" stroke="#c8c8c8" fill="none"/>
+<rect x="593" y="2519" width="254" height="26" rx="4" fill="#ffffff" opacity="0.93"/>
+<text x="720" y="2537" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a" text-anchor="middle">MEDIA · imagem em scrub no scroll</text>
+<rect x="376" y="2482" width="688" height="42" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="388" y="2507" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">H2 · O argumento que sustenta a pagina</text>
+<rect x="376" y="2556" width="688" height="26" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="388" y="2573" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">SUB · Uma frase</text>
+<rect x="0" y="2812" width="1440" height="450" fill="#ffffff"/>
+<line x1="0" y1="2812" x2="1440" y2="2812" stroke="#c0c0c0" stroke-dasharray="4 4"/>
+<text x="12" y="2830" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a">faq  ·  empilhado  ·  normal</text>
+<text x="1428" y="2830" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a" text-anchor="end">450px</text>
+<rect x="376" y="2900" width="688" height="42" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="388" y="2925" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">H2 · Perguntas frequentes</text>
+<rect x="376" y="2966" width="688" height="208" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="388" y="3074" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">LISTA · accordion</text>
+<rect x="0" y="3262" width="1440" height="642" fill="#fafafa"/>
+<line x1="0" y1="3262" x2="1440" y2="3262" stroke="#c0c0c0" stroke-dasharray="4 4"/>
+<text x="12" y="3280" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a">conversao  ·  centro  ·  airy</text>
+<text x="1428" y="3280" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a" text-anchor="end">642px</text>
+<rect x="376" y="3382" width="688" height="42" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="388" y="3407" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">H2 · Fale com a equipe de expansao</text>
+<rect x="376" y="3456" width="688" height="56" rx="10" fill="#ffffff" stroke="#d4d4d4"/>
+<text x="390" y="3489" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a">campo 1</text>
+<rect x="376" y="3524" width="688" height="56" rx="10" fill="#ffffff" stroke="#d4d4d4"/>
+<text x="390" y="3557" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a">campo 2</text>
+<rect x="376" y="3592" width="688" height="56" rx="10" fill="#ffffff" stroke="#d4d4d4"/>
+<text x="390" y="3625" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a">campo 3</text>
+<rect x="376" y="3660" width="688" height="56" rx="10" fill="#ffffff" stroke="#d4d4d4"/>
+<text x="390" y="3693" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a">campo 4</text>
+<rect x="376" y="3732" width="220" height="52" rx="26" fill="#dfe8f5" stroke="#9fbde4"/>
+<text x="486" y="3763" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a" text-anchor="middle">ENVIAR</text>
+<rect x="0" y="3904" width="1440" height="248" fill="#eaeaea"/>
+<line x1="0" y1="3904" x2="1440" y2="3904" stroke="#c0c0c0" stroke-dasharray="4 4"/>
+<text x="12" y="3922" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a">footer  ·  grid  ·  densa</text>
+<text x="1428" y="3922" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9a9a9a" text-anchor="end">248px</text>
+<rect x="24" y="3960" width="330" height="136" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="36" y="4032" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">LISTA</text>
+<rect x="378" y="3960" width="330" height="136" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="390" y="4032" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">LISTA</text>
+<rect x="732" y="3960" width="330" height="100" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="744" y="4014" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">LISTA</text>
+<rect x="1086" y="3960" width="330" height="100" rx="6" fill="#ececec" stroke="#d4d4d4"/>
+<text x="1098" y="4014" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5a5a5a">LISTA</text>
+</svg>

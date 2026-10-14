@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "projeto": "Exemplo Franquia",
+    "origem": "sem referencia, direcao escrita a partir do briefing",
+    "stack": "nextjs",
+    "pagina": "landing",
+    "acao": "preencher o formulario de interesse na franquia",
+    "tema": "claro",
+    "viewport": 1440,
+    "suposicoes": [
+      "a foto do hero e da unidade real, nao stock",
+      "o numero da prova precisa de confirmacao junto ao cliente"
+    ],
+    "direcao": {
+      "sensacao": "balcao de loja bem cuidada, nao startup",
+      "referencia": "a unidade real da marca",
+      "aposta": "foto crua da unidade e tipografia grande",
+      "proibido": "gradiente, kicker sobre titulo, tres cards iguais, estatisticas em faixa"
+    }
+  },
+  "tokens": {
+    "acento": "#0071e3",
+    "fundo": "#ffffff",
+    "superficie": "#f5f5f7",
+    "texto": "#1d1d1f",
+    "textoSec": "#6e6e73",
+    "borda": "#d2d2d7",
+    "raio": 18,
+    "container": 980,
+    "fonte": "system",
+    "acentoTexto": "#0066cc",
+    "acentoRotulo": "#ffffff"
+  },
+  "secoes": [
+    {
+      "id": "nav",
+      "rotulo": "Navegacao",
+      "layout": "faixa",
+      "densidade": "densa",
+      "largura": "full",
+      "altura": 72,
+      "blocos": [
+        {
+          "tipo": "logo",
+          "texto": "marca"
+        },
+        {
+          "tipo": "lista",
+          "itens": 4,
+          "texto": "links"
+        },
+        {
+          "tipo": "cta",
+          "texto": "Quero a franquia"
+        }
+      ],
+      "nota": "nav de vidro, backdrop-filter, fixa no topo"
+    },
+    {
+      "id": "hero",
+      "layout": "split",
+      "altura": "88vh",
+      "densidade": "airy",
+      "largura": "conteudo",
+      "blocos": [
+        {
+          "tipo": "h1",
+          "texto": "Headline de beneficio, nao de categoria",
+          "linhas": 2
+        },
+        {
+          "tipo": "sub",
+          "texto": "Sublinha com o numero que prova",
+          "linhas": 2
+        },
+        {
+          "tipo": "cta",
+          "texto": "Quero a franquia"
+        },
+        {
+          "tipo": "cta-sec",
+          "texto": "Ver como funciona"
+        },
+        {
+          "tipo": "media",
+          "formato": "4:3",
+          "nota": "foto da unidade real",
+          "busca": "modern franchise storefront building"
+        }
+      ]
+    },
+    {
+      "id": "prova",
+      "layout": "empilhado",
+      "fundo": "superficie",
+      "densidade": "normal",
+      "largura": "texto",
+      "blocos": [
+        {
+          "tipo": "h2",
+          "texto": "Uma frase que carrega o numero que prova, em contexto",
+          "linhas": 2
+        },
+        {
+          "tipo": "corpo",
+          "texto": "Depoimento ou fato verificavel. Numero entra dentro da frase, nao em faixa de estatisticas",
+          "linhas": 3
+        },
+        {
+          "tipo": "logo",
+          "texto": "selo ou parceiro real"
+        }
+      ],
+      "nota": "sem faixa de metricas-heroi: o numero e o argumento, nao o enfeite"
+    },
+    {
+      "id": "bento-vantagens",
+      "layout": "bento",
+      "colunas": 3,
+      "densidade": "normal",
+      "blocos": [
+        {
+          "tipo": "card",
+          "peso": 2,
+          "blocos": [
+            {
+              "tipo": "h3",
+              "texto": "Vantagem principal"
+            },
+            {
+              "tipo": "corpo",
+              "texto": "Duas linhas de apoio",
+              "linhas": 2
+            },
+            {
+              "tipo": "media",
+              "formato": "16:9",
+              "busca": "modern business"
+            }
+          ]
+        },
+        {
+          "tipo": "card",
+          "peso": 1,
+          "blocos": [
+            {
+              "tipo": "icone"
+            },
+            {
+              "tipo": "h3",
+              "texto": "Suporte"
+            },
+            {
+              "tipo": "corpo",
+              "texto": "Uma linha"
+            }
+          ]
+        },
+        {
+          "tipo": "card",
+          "peso": 1,
+          "blocos": [
+            {
+              "tipo": "icone"
+            },
+            {
+              "tipo": "h3",
+              "texto": "Implantacao"
+            },
+            {
+              "tipo": "corpo",
+              "texto": "Uma linha"
+            }
+          ]
+        },
+        {
+          "tipo": "card",
+          "peso": 2,
+          "blocos": [
+            {
+              "tipo": "h3",
+              "texto": "Retorno"
+            },
+            {
+              "tipo": "corpo",
+              "texto": "Duas linhas",
+              "linhas": 2
+            }
+          ]
+        }
+      ],
+      "nota": "hierarquia real de tamanho: o card de 2 colunas e o argumento forte"
+    },
+    {
+      "id": "recurso-estrela",
+      "layout": "media-full",
+      "altura": 560,
+      "densidade": "airy",
+      "blocos": [
+        {
+          "tipo": "media",
+          "formato": "preencher",
+          "nota": "imagem em scrub no scroll",
+          "busca": "retail store interior modern"
+        },
+        {
+          "tipo": "h2",
+          "texto": "O argumento que sustenta a pagina"
+        },
+        {
+          "tipo": "sub",
+          "texto": "Uma frase"
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "layout": "empilhado",
+      "largura": "texto",
+      "densidade": "normal",
+      "blocos": [
+        {
+          "tipo": "h2",
+          "texto": "Perguntas frequentes"
+        },
+        {
+          "tipo": "lista",
+          "itens": 6,
+          "texto": "accordion"
+        }
+      ]
+    },
+    {
+      "id": "conversao",
+      "layout": "centro",
+      "fundo": "superficie",
+      "densidade": "airy",
+      "largura": "texto",
+      "blocos": [
+        {
+          "tipo": "h2",
+          "texto": "Fale com a equipe de expansao"
+        },
+        {
+          "tipo": "form",
+          "itens": 4
+        }
+      ]
+    },
+    {
+      "id": "footer",
+      "layout": "grid",
+      "colunas": 4,
+      "fundo": "escuro",
+      "densidade": "densa",
+      "largura": "full",
+      "blocos": [
+        {
+          "tipo": "lista",
+          "itens": 4
+        },
+        {
+          "tipo": "lista",
+          "itens": 4
+        },
+        {
+          "tipo": "lista",
+          "itens": 3
+        },
+        {
+          "tipo": "lista",
+          "itens": 3
+        }
+      ]
+    }
+  ]
+}
