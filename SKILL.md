@@ -1,7 +1,7 @@
 ---
 name: schematize-design
 metadata:
-  version: 0.1.1
+  version: 0.2.0
 description: >-
   Design de UI: desenhar, criticar e polir site, landing, tela e componente; wireframe aprovado antes do código. Use ao pedir ou revisar visual. Front: schematize-web.
 ---
@@ -14,7 +14,7 @@ de polimento e o framework de animação de Emil Kowalski, e o método de direç
 discordam, a decisão está resolvida e escrita em `references/recusas-anti-ai-slop.md` (tabela "Conflitos entre as
 fontes"): não reabra caso a caso.
 
-**Versão:** skill `schematize-design` v0.1.1. Changelog em `CHANGELOG.md`.
+**Versão:** skill `schematize-design` v0.2.0. Changelog em `CHANGELOG.md`.
 
 ## Precedência e herança (leia antes de divergir)
 

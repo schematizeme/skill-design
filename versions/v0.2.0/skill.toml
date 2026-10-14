@@ -1,0 +1,12 @@
+slug = "design"
+name = "schematize-design"
+tag = "Design · UI/UX · wireframe · motion"
+status = "beta"
+order = 33
+current_version = "0.2.0"
+href = "/design"
+
+[descriptions]
+pt = "A superskill de design da casa: direção visual, gosto, wireframe aprovado antes do código (HTML, Next.js, Shopify), tokens e contraste medidos, animação com um momento autoral, auditoria visual e as recusas unificadas de \"cara de IA\". Imagem gerada nunca pelo Claude."
+en = "The house's design superskill: art direction, taste, wireframe approved before code (HTML, Next.js, Shopify), measured tokens and contrast, motion with one authorial moment, visual audit and the unified \"AI slop\" refusals. Generated imagery never by Claude."
+es = "La superskill de diseño de la casa: dirección visual, criterio, wireframe aprobado antes del código (HTML, Next.js, Shopify), tokens y contraste medidos, animación con un momento de autor, auditoría visual y los rechazos unificados de \"cara de IA\". Imagen generada nunca por Claude."
