@@ -3,9 +3,9 @@ name: schematize-design
 metadata:
   version: 0.1.0
 description: >-
-  Design de UI: desenhar, redesenhar, criticar e polir site, landing, LP, tela e componente; wireframe aprovado antes
-  do código (HTML, Next.js, Liquid); tokens, contraste, animação, "menos cara de IA". Imagem gerada só fora do Claude.
-  Engenharia de front: schematize-web.
+  Design de UI: desenhar, redesenhar, criticar e polir site, landing, tela e componente; wireframe aprovado antes do
+  código; tokens, contraste, animação, "menos cara de IA". Imagem só fora do Claude. Engenharia de front:
+  schematize-web.
 ---
 
 # schematize-design: a superskill de design da casa
